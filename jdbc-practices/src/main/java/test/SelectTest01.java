@@ -35,7 +35,7 @@ public class SelectTest01 {
 			
 			rs = stmt.executeQuery(sql);
 			while(rs.next()) {
-				Long empNo = rs.getLong(1);
+				Long empNo = rs.getLong(1); // 첫 번째 속성(Num만 가져오기)
 				String firstName = rs.getString(2);
 				System.out.println(empNo + ":" + firstName);
 			}
